@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" method="">
+        <input name="post_name" type="text" placeholder="Поиск">
+        <input type="submit" value="Поиск">
+    </form>
+
+    {% for post in post_list %}
+        <p>{{ forloop.counter }}. {{ post }}</p>
+    {% endfor %}
+</body>
+</html>
